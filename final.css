@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Trocchi&display=swap');
+
+*{box-sizing: border-box;}
+
+header, main, nav, footer, section, article, figure, figcaption, aside {display:block;}
+
+/*--------------NAVBAR-------------------*/
+
+#navbar { padding: 0px;
+          height: auto;
+          margin-top: 0px;
+          margin: auto;
+          overflow: auto;
+          text-align: center;
+	  display: inline-block;
+}    
+
+#navbar li { display: inline-block;
+	     font-family: 'Abril Fatface', cursive;
+}
+
+#navbar a { text-decoration: none;
+            color:#ffffff;
+            padding: 15px 16px;
+            margin-top: 0px;
+            display: block;
+}
+ 
+#navbar a:hover { background: rgb(200, 200, 200); 
+                  color: black; 
+} 
+
+
+#navbar ul { width:91.3%;
+	     height: 50px;
+             background-color: rgb(56,56, 56);
+             position: fixed;
+             list-style: none;
+             margin-top: 0px;
+             margin: 0px;
+             overflow: hidden;
+	     opacity: .75;
+	     z-index: 9999;
+}
+
+
+/*--------------NAVBAR-------------------*/
+
+
+/*--------------TEXT---------------------*/
+
+h1 { text-align: center;
+     font-family: 'Anton', sans-serif;
+     color: #660000;
+     background-color: #fff;
+}
+
+.trocchi { font-family: 'Trocchi', serif;
+	   padding: 15px;
+	   background-color: #fff;
+}
+
+/*--------------TEXT---------------------*/
+
+
+/*--------------PICTURES-----------------*/
+
+
+
+#imageOne { background-image:url(images/rvcsign.jpg);
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 350px;
+	    text-decoration: none;
+}
+
+
+#imageTwo { background-image:url(images/rvcpond.jpg);
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 350px;
+	    text-decoration: none;
+}
+
+#imageThree { background-image:url(images/starnight.jpg);
+	      background-size: 100% 100%;
+	      background-repeat: no-repeat;
+	      height: 600px;
+	      text-decoration: none;
+}
+
+#imageFour {  background-image:url(images/rvcmap.jpg);
+	      background-size: 100% 100%;
+	      background-repeat: no-repeat;
+	      height: 330px;
+	      text-decoration: none;
+}
+
+#imageFive {  background-image:url(images/rvcmap2.jpg);
+	      background-size: 100% 100%;
+	      background-repeat: no-repeat;
+	      height: 330px;
+	      text-decoration: none;
+}
+
+/*--------------PICTURES-----------------*/
+
+/*---------------GALLERY-----------------*/
+
+.galleryContainer { position: relative; 
+}
+    
+.galleryContainer ul { list-style-type: none;
+                     width: 300px; 
+}
+    
+.galleryContainer li { display: inline; 
+                     float: left;
+	             padding: 10px; 
+}
+    
+.galleryContainer img { border-style: none;
+}
+    
+.galleryContainer a { text-decoration: none;
+                    font-style: italic;  
+                    color: #eaeaea; 
+}
+    
+.galleryContainer span { position: absolute;
+                       left: -1000px;
+                       opacity: 0;
+                       transition: opacity 3s ease-in-out; 
+}
+    
+.galleryContainer a:hover span { position: absolute;
+                               top: 25px;
+                               left: 320px; 
+                               text-align: center; 
+                               opacity: 1; 
+}
+    
+figure { position: absolute;
+         left: 280px; 
+         text-align: center; 
+         opacity: .25;
+}
+
+
+/*---------------GALLERY-----------------*/
+ 
+
+/*--------------CONTAINERS---------------*/
+
+.row:after { content: "";
+	     display: table;
+	     clear: both;
+}
+
+.row { margin: 0px;
+       position: relative; }
+
+.wrapper { width: 94%;
+           margin-left:auto;
+           margin-right: auto;
+           border-left-style:ridge;
+           background-color: transparent;
+           box-shadow: 10px 5px 6px #d4d4d4;
+  	   padding: 15px; 
+}
+
+.innerContainer { width: 100%;
+                  padding-left: 15px;
+        	  padding-right: 15px;
+        	  overflow: hidden;
+         	  background-color: #fff;
+	          position: relative;
+}    
+
+.column100 { width: 100%;
+	     padding: 10px;
+	     margin-top: 0px;
+	     position: relative;
+}
+
+.column50 { float: left;
+  	    width: 49.5%;
+  	    background-color: #fff;
+  	    background-size:cover;
+	    position: relative;    
+}
+
+.column50-2 { float: right;
+  	      background-size:cover;
+  	      background-repeat: no-repeat;
+  	      width: 49.5%;
+  	      background-color:#fff;
+	      position: relative;
+}
+
+.welcome50 { float: left;
+  	     width: 49.5%;
+  	     background-color: #fff;
+  	     background-size:cover;
+	     position: relative;
+	     padding-right: 15px; 
+}
+
+.welcome50-2 { float: right;
+  	       background-size:cover;
+  	       background-repeat: no-repeat;
+  	       width: 49.5%;
+  	       background-color:#fff;
+	       position: relative;
+	       padding-left: 15px;
+}
+
+.column33 { float: left;
+  	    width: 33%;
+  	    padding: 0px;
+  	    height: 250px;
+}
+
+.leftWelcomeDT { font-family: 'Trocchi', serif;
+		 padding: 15px;
+}
+
+.rightWelcomeDT { font-family: 'Trocchi', serif;
+	          padding: 15px;
+}
+
+
+/*--------------CONTAINERS---------------*/
+
+/*---------------------TABLE------------------*/
+
+
+table { margin: auto;
+        border: 5px solid #660000;
+        width: 600px;
+        border-spacing: 0;
+	color: #fff;
+}
+td, th { padding: 5px;
+         font-family: Arial, sans-serif;
+         border-style: none;
+}
+caption { font-family: Anton, sans-serif;
+          font-size: 2em;
+          padding-bottom: 5px;
+}
+tr:nth-of-type(even) { background-color: #330000;
+}
+tr:first-of-type { background-color: #003333; 
+}
+
+
+/*---------------------TABLE------------------*/
+
+footer ul { list-style-type: none;
+}
+
+footer li { display: inline-block;
+
+
+
+/*---------------------------------------MEDIA QUERIES---------------------------------*/
+
+/*---------Desktops--------------*/
+
+
+@media (min-width: 1281px) {
+  
+#imageOneM { display: none;
+}
+
+#imageFourM {  display: none;
+}
+
+#imageFiveM {  display: none;
+}
+
+.thumbnails { width: 100px;
+	      height: 75px;
+}
+
+  
+}
+
+/*---------Desktops--------------*/
+
+
+/*-----------Laptops------------------*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  
+#imageOneM { display: none;
+}
+
+#imageFourM {  display: none;
+}
+
+#imageFiveM {  display: none;
+}
+
+.thumbnails { width: 100px;
+	      height: 75px;
+}
+
+}
+
+/*-----------Laptops------------------*/
+
+/*-----------Tablets------------------*/
+
+@media only screen and (max-width: 64em) {
+
+#canvas { display: none; 
+}
+
+
+.thumbnails { width: 120px;
+	      height: 100px;
+}
+
+#navbar ul { width:88.6%;
+	     height: 50px;
+             background-color: rgb(56,56, 56);
+             position: fixed;
+             list-style: none;
+             margin-top: 0px;
+             margin: 0px;
+             overflow: hidden;
+	     opacity: .75;
+	     z-index: 9999;
+}
+
+/*------------------Gallery--------------------*/
+
+
+.galleryContainer a:hover span { display: none;
+}
+
+
+.thumbnails { width: 250px;
+	      height: 190px;
+	      display: inline;
+}
+
+
+/*------------------Gallery--------------------*/
+
+}
+
+/*-----------Tablets------------------*/
+
+
+/*-----------Smart Phones------------------*/
+
+@media only screen and (max-width: 37.5em) {
+
+
+table { display: none;
+}
+
+/*--------------NAVBAR-------------------*/
+
+#navbar ul { width:86.2%;
+	     height: 50px;
+             background-color: rgb(56,56, 56);
+             position: fixed;
+             list-style: none;
+             margin-top: 0px;
+             margin: 0px;
+             overflow: hidden;
+	     opacity: .75;
+	     z-index: 9999;
+}
+
+.welcomeDT { display: none;
+}
+
+
+/*--------------NAVBAR-------------------*/
+
+
+/*-----------Images---------------*/
+
+#imageThree { width: 100%;
+	      height: 400px;
+}
+
+.thumbnails { width: 271px;
+	      height: 200px; 
+}
+
+.galleryContainer a:hover span { display: none;
+}
+
+.column50 { display: none;
+}
+
+.column50-2 { display: none; 
+}
+
+.column33 { display: none;
+}
+
+#imageOneM { background-image:url(images/rvcsign.jpg);
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 350px;
+	    text-decoration: none;
+}
+
+#imageFiveM {  background-image:url(images/rvcmap2.jpg);
+	      background-size: 100% 100%;
+	      background-repeat: no-repeat;
+	      width: 330px;
+	      height: 330px;
+	      text-decoration: none;
+
+}
+
+/*----------Images--------------*/
+
+
+}
+
+
+/*-----------Smart Phones------------------*/
+
+/*-----------------------------------------MEDIA QUERIES-------------------------------*/
